@@ -1,0 +1,414 @@
+
+/* Encabezado */
+.contenido {
+
+  animation-duration: 0.5s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    transform: translate(0,150%);
+  }
+  to {
+    margin-bottom:-5%;
+  }
+
+}
+
+body{
+  background-color: #02010a;
+}
+
+.contenido  {
+	padding: 0;
+	margin: 0 auto;
+}
+.contenido  section{
+  width: 100%;
+	margin: 0 auto;
+}
+
+.contenido  {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.contenido  div {
+	box-sizing: border-box;
+	min-width: 150px;
+	padding: 20px;
+}
+
+.titulo{
+  font-family: 'Dancing Script';
+  color: white;
+  padding-left: 10px;
+  text-shadow: 2px 2px #02010a;
+  width: 50%;
+}
+.menu{
+  font-family: 'Dancing Script';
+  color: white;
+  padding-left: 10px;
+  text-shadow: 2px 2px #02010a;
+  width: 50%;
+  height: 100%;
+
+}
+
+.menu nav a{
+    font-family: 'Dancing Script';
+    text-shadow: 2px 2px #02010a;
+    color: white;
+    padding-right: 10px;
+    text-align: right;
+}
+
+
+.contacto a:link{
+  text-decoration: none;
+  color: black;
+}
+
+.Redes a:link{
+  text-decoration: none;
+    color: black;
+}
+
+
+.Cabecera {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+  flex-wrap: nowrap;
+
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+}
+
+.Cabecera > div {
+	width: 100%;
+}
+
+.menu{
+  text-align: right;
+}
+
+
+.titulo{
+  float: left;
+  width: 100%;
+}
+.menu{
+  float: right;
+  width: 100%;
+}
+
+.imagenprincipal{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #82c3a6;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.ImagenCentral{
+  border-style: solid;
+  border-width: 2px;
+  background-color: #82c3a6;
+  width: 40%;
+}
+
+.Imagen_izquierda img{
+  box-shadow: 3px 3px #02010a;
+  width: 50%;
+}
+
+.Imagen_Derecha img{
+  background-color: #d5c75f ;
+    box-shadow: 3px 3px #02010a;
+  width: 50%;
+}
+
+.face{
+  width: 3%;
+}
+.twiter{
+  width: 3%;
+}
+.youtube{
+  width: 3%;
+}
+
+.ImagenCentral {
+  box-shadow: 2px 2px #02010a;
+}
+
+/*---------------------Imagenes de Paisajes--------*/
+/*Estructura de cada componente de la galeria (imagen + descripcion)*/
+  .galeria{
+    display: flex;
+  	-webkit-flex-flow: row wrap;
+  	flex-flow: row wrap;
+
+    width: 100%;
+    background-color: #d5c75f;
+  }
+  .galeria div{
+          width: 30%;
+          height: auto;
+          -webkit-transition: -webkit-transform 1s;
+          display:inline;
+          float:left;
+          margin:0px 3% 0 0;
+          padding: 40px;
+      }
+      .galeria div img{
+          width: 100%;
+          height: auto;
+          box-shadow: 0 0 10px #666;
+          border: 2px solid black;
+      }
+
+.Paisaje1{
+  filter: blur(10px);
+}
+.Paisaje2, .Paisaje4, .Paisaje6{
+  filter: grayscale(100%);
+}
+.Paisaje3{
+  filter: sepia(90%);
+}
+
+  @media (min-width:960px){
+    .galeria div{
+        width: 30%;
+    }
+  }
+/*--------------------Parte Central----------------*/
+.Imagen_Secundaria{
+  display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+
+  width: 100%;
+  background-color: #d5c75f;
+}
+
+.Imagen_izquierda {
+  float: left;
+  vertical-align: text-top;
+  position: relative;
+  width: 50%;
+  background-color: #d5c75f;
+  text-align: center;
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.Imagen_Derecha {
+  float: right;
+  vertical-align: text-top;
+  position: relative;
+
+  width: 50%;
+  background-color: #d5c75f;
+  text-align: center;
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.tituloimg1 {
+  float: left;
+  vertical-align: text-top;
+  position: relative;
+  width: 50%;
+  background-color: #d5c75f;
+  text-align: center;
+}
+.tituloimg2 {
+  float: left;
+  vertical-align: text-top;
+  position: relative;
+  width: 50%;
+  background-color: #d5c75f;
+  text-align: center;
+}
+
+.pie_pagina{
+  font-family: 'Dancing Script';
+  font-size: 25px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+}
+.contacto{
+  width: 25%;
+}
+.Terminos{
+  width: 25%;
+}
+.Redes{
+  width: 25%;
+}
+.Derechos{
+  width: 25%;
+}
+
+/*--------------Efectos para las Imagenes----------------------*/
+.Imagen_izquierda img{
+  width: 80%;
+  border: 2px solid black;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
+
+.Imagen_izquierda img:hover{
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+.Imagen_Derecha img{
+  width: 80%;
+  border: 2px solid black;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
+
+.Imagen_Derecha img:hover{
+  -webkit-transform: translate(20px,-5px);
+  -moz-transform: translate(20px,-5px);
+  -ms-transform: translate(20px,-5px);
+  transform: translate(20px,-5px);
+  box-shadow: 2px 2px #82c3a6;
+}
+/*--------------Determinando La visualizacion Movil----------------------*/
+@media all and (max-width: 900px){
+
+.contenido
+	{
+		width: 100%;
+		margin: 0 auto;
+		order: 1;
+	}
+  /*header{
+    width: 100%;
+    margin: 0 auto;
+    order: 2;
+  }*/
+  .Cabecera{
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    order: 2;
+  }
+  .titulo{
+    text-align: center;
+    width: 100%;
+    order: 3;
+  }
+  .menu{
+    text-align: center;
+    width: 100%;
+		order: 4;
+  }
+	.imagenprincipal
+	{
+	width: 100%;
+		order: 5;
+	}
+  /*.doscolumnas{
+    width: 100%;
+  }*/
+	.Imagen_izquierda
+	{
+	width: 100%;
+  order: 6;
+	}
+  .tituloimg1
+  {
+  width: 100%;
+  order: 7;
+  }
+	.Imagen_Derecha
+	{
+	width: 100%;
+	order: 8;
+	}
+  .tituloimg2
+  {
+  width: 100%;
+  order: 9;
+  }
+/*----------------------Galeria------------------------*/
+.galeria div
+{
+width: 100%;
+order: 9;
+}
+.Paisaje1
+{
+width: 100%;
+order: 9;
+}
+.Paisaje2
+{
+width: 100%;
+order: 9;
+}
+.Paisaje3
+{
+width: 100%;
+order: 9;
+}
+.Paisaje4
+{
+width: 100%;
+order: 9;
+}
+.Paisaje5
+{
+width: 100%;
+order: 9;
+}
+.Paisaje6
+{
+width: 100%;
+order: 9;
+}
+/*----------------------Seccion del Pie------------------------*/
+  .contacto
+	{
+	width: 100%;
+  order: 10;
+	}
+
+  .Terminos
+	{
+	width: 100%;
+  order: 11;
+	}
+
+  .Redes
+	{
+	width: 100%;
+	order: 12;
+	}
+  .Derechos
+	{
+	width: 100%;
+  order: 13;
+	}
+}
